@@ -6,7 +6,7 @@ A barebones Node.js app using [Express 4](http://expressjs.com/).
 
 ## Running Locally
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
+Make sure you have [Node.js](http://nodejs.org/) installed.
 
 ```sh
 $ git clone https://github.com/bsa-git/express-start-winserv.git # or clone your own fork
@@ -51,7 +51,7 @@ var Service = require('node-windows').Service;
 var svc = new Service({
   name:'Node application as Windows Service',
   description: 'Node application as Windows Service',
-  script: 'C:\\temp\\test.js'
+  script: 'C:\\MyProjects\\NodeServer\\express-start-winserv\\index.js'
 });
 
 // Listen for the "install" event, which indicates the
@@ -82,7 +82,7 @@ var Service = require('node-windows').Service;
 var svc = new Service({
   name:'Node application as Windows Service',
   description: 'Node application as Windows Service',
-  script: 'C:\\temp\\test.js'
+  script: 'C:\\MyProjects\\NodeServer\\express-start-winserv\\index.js'
 });
 
 // Listen for the "uninstall" event so we know when it's done.
