@@ -26,8 +26,10 @@
   },
   "keywords": [
     "node",
-    "heroku",
-    "express"
+    "express",
+    "windows",
+    "service",
+    "windows service"
   ],
   "license": "MIT"
 }
