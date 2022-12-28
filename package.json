@@ -8,8 +8,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "install-service": "node install-windows-service.js",
-    "uninstall-service": "node uninstall-windows.service.js",
+    "install-win-service": "node install-windows-service.js",
+    "uninstall-win-service": "node uninstall-windows.service.js",
     "test": "node test.js"
   },
   "dependencies": {

@@ -8,7 +8,15 @@ var Service = require('node-windows').Service;
 var svc = new Service({
   name: 'Node application as Windows Service',
   description: 'Node application as Windows Service',
-  script: filePath
+  script: filePath,
+  nodeOptions: [
+    '--harmony',
+    '--max_old_space_size=4096'
+  ],
+  env: [{
+    name: 'NODE_ENV',
+    value: 'production' // env NODE_ENV = 'production'
+  }]
 });
 
 // Listen for the "install" event, which indicates the
